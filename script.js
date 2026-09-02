@@ -37,33 +37,6 @@ hosting:{
  desc:"Panel awal untuk fitur hosting.",
  html:`<div class="notice">Template hosting siap dikembangkan. Nanti bisa ditambah project list, domain, storage, SSL, dan pengaturan website.</div>`
 },
-expense:{
- title:"💰 Pengeluaran Harian",
- desc:"Catat pengeluaran harian dan hitung totalnya.",
- html:`<input class="tool-input" id="expenseName" placeholder="Nama pengeluaran">
- <input class="tool-input" id="expenseAmount" type="number" placeholder="Jumlah (Rp)">
- <button class="tool-btn" id="addExpense">Tambah</button>
- <div id="expenseList" style="margin-top:18px"></div>
- <h3 style="margin-top:18px">Total: <span id="expenseTotal">Rp0</span></h3>`,
- init(){
-   let total=0;
-   const list=document.getElementById("expenseList");
-   document.getElementById("addExpense").onclick=()=>{
-     const name=document.getElementById("expenseName").value.trim();
-     const amount=Number(document.getElementById("expenseAmount").value);
-     if(!name||!amount)return;
-     total+=amount;
-     const item=document.createElement("div");
-     item.className="notice";
-     item.style.marginTop="8px";
-     item.textContent=`${name} — Rp${amount.toLocaleString("id-ID")}`;
-     list.appendChild(item);
-     document.getElementById("expenseTotal").textContent=`Rp${total.toLocaleString("id-ID")}`;
-     document.getElementById("expenseName").value="";
-     document.getElementById("expenseAmount").value="";
-   };
- }
-},
 tiktok:{
  title:"🎵 TikTok Downloader",
  desc:"Antarmuka untuk fitur download video TikTok.",
