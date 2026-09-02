@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolBox v2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header class="navbar">
+    <div class="logo">Tool<span>Box</span></div>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">TOOLBOX v2</p>
+      <h1>All your tools.<br><span>One place.</span></h1>
+      <p class="subtitle">Kumpulan tools praktis untuk kebutuhan sehari-hari, web, AI, dan networking.</p>
+      <a class="button" href="#tools">Lihat Tools</a>
+    </section>
+
+    <section id="tools" class="section">
+      <h2>Tools</h2>
+      <p class="section-desc">Pilih tools yang ingin digunakan.</p>
+
+      <div class="cards">
+        <button class="card" data-tool="calculator">
+          <div class="icon">🧮</div>
+          <h3>Kalkulator</h3>
+          <p>Hitung angka dengan cepat.</p>
+        </button>
+
+        <button class="card" data-tool="ai">
+          <div class="icon">🤖</div>
+          <h3>AI Chat</h3>
+          <p>Wadah chat AI seperti assistant.</p>
+        </button>
+
+        <button class="card" data-tool="deploy">
+          <div class="icon">🚀</div>
+          <h3>Deployment Website</h3>
+          <p>Tempat untuk deploy website.</p>
+        </button>
+
+        <button class="card" data-tool="hosting">
+          <div class="icon">🌐</div>
+          <h3>Hosting Website</h3>
+          <p>Kelola website dan hosting.</p>
+        </button>
+
+        <button class="card" data-tool="expense">
+          <div class="icon">💰</div>
+          <h3>Pengeluaran Harian</h3>
+          <p>Catat dan pantau pengeluaran.</p>
+        </button>
+
+        <button class="card" data-tool="tiktok">
+          <div class="icon">🎵</div>
+          <h3>TikTok Downloader</h3>
+          <p>Antarmuka downloader video.</p>
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About ToolBox</h2>
+      <p>ToolBox adalah wadah berbagai tools online dalam satu website. Versi ini adalah fondasi frontend yang siap dikembangkan menjadi aplikasi penuh.</p>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>© <span id="year"></span> ToolBox</footer>
+  <script src="script.js"></script>
+</body>
+</html>
